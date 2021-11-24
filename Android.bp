@@ -1186,6 +1186,10 @@ cc_library {
         blocklist: "libvpx_blocklist.txt",
     },
     min_sdk_version: "29",
+
+    lto: {
+        never: true,
+    },
 }
 
 cc_fuzz {
